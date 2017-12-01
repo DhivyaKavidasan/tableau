@@ -1,0 +1,188 @@
+
+d={'a':3,4:5,1:2}
+
+print(d)
+
+d['a']='c'
+
+print(d)
+
+
+
+
+
+
+user_dict={'dhivya@gmail':{'name':'dhivya','city':'chennai'},
+
+           'kd@gmail':{'name':'kd','city':'tanjore'}
+
+          }
+
+print(user_dict)
+
+
+user_dict['xyz@gmail']={'name':'xyz','city':'chennai'}
+
+print(user_dict)
+
+
+user_dict['kd@gmail']['city']='bangalore'
+
+print(user_dict)
+
+
+print(user_dict['dhivya@gmail']['name'])
+
+
+
+
+
+
+
+stud_dict={'stud1':[99,98,67],'stud2':[76,34,67]}
+
+#print(stud_dict)
+
+
+#print(stud_dict['stud2'][1])
+
+
+stud_dict['stud1'][2]=100
+
+#print(stud_dict)
+
+
+
+for(k,v) in stud_dict.items():
+
+  print(k,v)
+
+    for i in v.items():
+
+      print(i)
+
+    
+
+d={1:2,3:4,5:7}
+
+for k,v in d.items():
+
+  print(k,v)
+
+
+
+
+
+
+
+user_dict={'dhivya@gmail':{'name':'dhivya','city':'chennai'},
+
+           'kd@gmail':{'name':'kd','city':'tanjore'}
+
+          } 
+
+for mail,data in user_dict.items():
+
+  for key,value in data.items():
+
+    print(mail,key,value)
+
+
+
+
+
+
+
+
+inventory = {
+
+    'gold' : 500,
+
+ 
+                  'pouch' : ['flint', 'twine', 'gemstone'],
+
+
+                  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+
+
+                }
+
+
+inventory['pocket']=['seashell','strange berry','lint']
+
+#print (inventory)
+
+inventory['backpack'].sort()
+
+#print inventory
+
+inventory['backpack'].remove('dagger')
+
+#print inventory
+
+inventory['gold']=inventory['gold']+50
+
+#print inventory['gold']
+
+print inventory
+
+
+
+
+
+
+
+
+stud_dict={'stud1':[99,98,67],'stud2':[76,34,67]}
+
+print(stud_dict)
+
+
+print ("total marks of student 1:")
+
+a=sum(stud_dict['stud1'])
+
+print a
+
+
+print ("average marks of student 1:")
+
+print a/3
+
+
+print ("total marks of student 2:")
+
+b=sum(stud_dict['stud2'])
+
+print b
+
+
+print ("average marks of student 1:")
+
+print b/3
+
+
+
+
+
+
+f=open('marks.txt','w')
+
+f.write('science=50')
+
+#f.append('\nmaths=90')
+
+#f.append('\nenglish=85')
+
+#f.append('\ntamil=92')
+
+f.close()
+
+
+f=open('marks.txt','w')
+
+data=f.read()
+
+print(data)
+
+f.close()
